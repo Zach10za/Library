@@ -62,7 +62,7 @@ describe('async actions', () => {
     const numFound = 0;
     const searchTerm = "A book";
     const page = 1;
-    fetchMock.getOnce('http://openlibrary.org/search.json?title=A+book&page=1', { docs: [], numFound });
+    fetchMock.getOnce('https://openlibrary.org/search.json?title=A+book&page=1', { docs: [], numFound });
     const expectedActions = [
       { type: FETCH_BOOKS_BEGIN },
       { type: FETCH_BOOKS_SUCCESS, payload: {books, numFound, page} }

@@ -34,7 +34,7 @@ export const fetchBooks = (searchTerm, page) => {
   return async dispatch => {
     try {
       dispatch(fetchBooksBegin());
-      const response = await fetch(`http://openlibrary.org/search.json?title=${searchTerm.split(' ').join('+')}&page=${page}`);
+      const response = await fetch(`https://openlibrary.org/search.json?title=${searchTerm.split(' ').join('+')}&page=${page}`);
       if (!response.ok) {
         throw Error(response.statusText);
       }

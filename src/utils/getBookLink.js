@@ -14,6 +14,6 @@ export default (book) => {
     key = 'isbn';
     value = book.isbn[0]
   }
-  return `http://openlibrary.org/${key}/${value}`;
+  return `https://openlibrary.org/${key}/${value}`;
   }
      
