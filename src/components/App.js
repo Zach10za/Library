@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import BookList from './BookList';
 import BookInfoBar from './BookInfoBar';
-import BookCount from './BookCount';
 
 class App extends Component {
   state = {
@@ -26,7 +25,6 @@ class App extends Component {
         <SearchBar />
         <BookList />
         <BookInfoBar hide={this.state.hideBookInfoBar} />
-        <BookCount />
       </div>
     )
   }

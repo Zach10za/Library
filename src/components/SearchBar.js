@@ -47,7 +47,7 @@ class SearchBar extends Component {
           value={this.state.searchTerm} />
         <div className="page-controls">
           <button onClick={this.prevPage} className="prev" disabled={this.props.page === 1}>{"<"}</button>
-          <h2 className="page-number">{this.props.numFound < 1 ? 0 : this.props.page}</h2>
+          <h2 className="page-number">{this.props.numFound < 1 ? 0 : `${this.props.page} / ${Math.ceil(this.props.numFound / 100)}`}</h2>
           <button onClick={this.nextPage} className="next" disabled={Math.ceil(this.props.numFound / 100) <= this.props.page}>{">"}</button>
         </div>
       </div>
