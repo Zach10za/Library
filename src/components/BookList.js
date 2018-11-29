@@ -13,10 +13,10 @@ const BookList = (props) => {
   return (
     <div className="book-list">
       <div className="wrapper">
-        { props.books.length > 0
-          ? props.books.map(book => <BookCover key={book.key} book={book} />)
-          : props.loading
+        {props.loading
           ? <img className="loading" src={loading} />
+          : props.books.length > 0
+          ? props.books.map(book => <BookCover key={book.key} book={book}/>)
           : props.error
           ? <h1 className="no-results">Error fetching books</h1>
           : <h1 className="no-results">0 books found</h1> }

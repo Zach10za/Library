@@ -8,11 +8,12 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 }
 
 .page-title {
   color: #FFF;
-  height: 5vh;
+  height: 5%;
   font-size: 2rem;
   width: 100%;
   max-width: 400px;
