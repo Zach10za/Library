@@ -1,0 +1,35 @@
+.book-info-bar {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(177, 130, 86, 0.95);
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+  transition: 0.2s;
+  img {
+    height: 400px;
+  }
+  .title {
+    font-size: 2rem;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  div {
+    padding: 5px;
+    width: 100%;
+    line-height: 1.2rem;
+  }
+  a {
+    color: rgb(0, 57, 110);
+  }
+  &.hide {
+    left: -460px;
+  }
+}
