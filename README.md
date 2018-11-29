@@ -21,7 +21,7 @@
 
 ## Search any book
 
-All you have to do is type in the title or partial title of any book and the results will update in 'real-time'. Each page of results will show a maximum of 100 books. Select a book to view more information and click anywhere on the screen to hide the sidebar.
+All you have to do is type in the title or partial title of any book and the results will update in 'real-time' using th Open Library API. Each page of results will show a maximum of 100 books. Select a book to view more information and click anywhere on the screen to hide the sidebar.
 
 <img src="https://github.com/Zach10za/Library/blob/master/src/assets/screenshot2.PNG">
 
